@@ -29,4 +29,11 @@ How things supposed to happend:
     able to modify user event completed section(where all events which are completed by user and verified by admin will be stored)
     able to get access of event done by user and user data too.
 
+How to deploy it in your environment:
+1. clone repo
+2. type command in terminal: npm i
+3. type: node index.js, to start backend
+
+You can use postman for GET/POST/PUT/DELETE/etc requests.
+
 
