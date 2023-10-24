@@ -14,20 +14,24 @@ const NotesSchema = new Schema({
         type: String,
         default: 'General',
     },
-    endDate: {
+    dateCreated:{
         type: Date,
         default: Date.now,
+    },
+    endDate: {
+        type: Date,
         requires: true,
     },
     ECoins:{
         type: Number,
         default: 0,
-        requires: true,
+        // If we already defined default for an entity, it means if we don't provide any value then, defalut value will be added.
+        // requires: true,
     },
     active:{
         type: Boolean,
         default: true,
-        requires: true,
+        // requires: true,
     }
 });
 

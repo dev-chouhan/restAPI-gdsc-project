@@ -6,10 +6,11 @@ const Event = require("../models/Event"); //? To target event schema
 const { body, validationResult } = require('express-validator'); //? to take valid input in name/email/password
 const bcrypt = require('bcryptjs'); //? to encrypt the password
 const jwt = require('jsonwebtoken'); //? for creating a token for each id
-require("dotenv").config();
 
 var fetchAdmin = require("../middleware/fetchAdmin");
-const JWD_SECRET = process.env.AdminSecretKey;
+// require("dotenv").config();
+// const JWD_SECRET = process.env.AdminSecretKey;
+const JWD_SECRET = "DevIsGoof";
 
 //* Route 1 : Create a user using POST "/api/admin/createAdmin". No login requires
 router.post("/createAdmin", [

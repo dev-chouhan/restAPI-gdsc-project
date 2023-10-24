@@ -5,8 +5,9 @@ const Event = require("../models/Event"); //? To target user schema
 const { body, validationResult } = require('express-validator'); //? to take valid input in name/email/password
 const bcrypt = require('bcryptjs'); //? to encrypt the password
 const jwt = require('jsonwebtoken'); //? for creating a token for each id
-require("dotenv").config();
-const JWD_SECRET = process.env.UserSecretKey;
+// require("dotenv").config();
+// const JWD_SECRET = process.env.UserSecretKey;
+const JWD_SECRET = "DevIsGoof";
 
 var fetchUser = require("../middleware/fetchUser");
 

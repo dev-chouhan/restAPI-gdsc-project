@@ -1,8 +1,9 @@
 // Fetch events for current user.
 
 const jwt = require("jsonwebtoken");
-require("dotenv").config();
-const JWD_SECRET = process.env.AdminSecretKey;
+// require("dotenv").config();
+// const JWD_SECRET = process.env.AdminSecretKey;
+const JWD_SECRET = "DevIsGoof";
 
 const fetchAdmin = (req, res, next)=>{
     // Get the user from the jwt token and add id to req object.
